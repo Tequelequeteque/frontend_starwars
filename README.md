@@ -1,27 +1,15 @@
-# FRONTEND
+# FRONTEND STAR WARS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
+## Dependencias
 
-## Development server
+  - Tenha instalado o [node](https://nodejs.org/pt-br/download/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Configurações
 
-## Code scaffolding
+- Configurar o arquivo [`.environment.ts`](src/environments/environment.ts)
+  - `apiURL:$HOST:$PORT` que seguem do projeto de backend anterior.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Executando
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Feito os passos anteriores basta dar um `npm i` or `yarn` para instalar as dependencias do projeto.
+- Após isso digite `yarn ng serve` or `npm run ng serve` que o rodando neste link [http://localhost:4200](http://localhost:4200).
