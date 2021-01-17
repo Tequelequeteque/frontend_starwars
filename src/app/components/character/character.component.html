@@ -1,0 +1,26 @@
+<form [formGroup]="formGroup" class="container" (submit)="handleSubmit()">
+  <div class="row">
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input formControlName="name" class="form-control" id="name" placeholder="Nome do personagem"
+          [readonly]="!(update || store)">
+      </div>
+      <div class="form-group">
+        <label for="age">Idade</label>
+        <input formControlName="age" type="number" min="0" class="form-control" id="age"
+          placeholder="Idade do personagem" [readonly]="!(update || store)">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <button *ngIf="store" type="submit" class="btn btn-primary btn-lg">Criar</button>
+      <button *ngIf="update" [disabled]="character?.hasBeenUpdate" type="submit" class="btn btn-primary btn-lg">Atualizar</button>
+      <button *ngIf="delete" type="submit" class="btn btn-danger btn-lg">Deletar</button>
+    </div>
+    <div class="col-sm">
+      <button type="button" (click)="handleCancel()" class="btn btn-secondary btn-lg">Cancelar</button>
+    </div>
+  </div>
+</form>

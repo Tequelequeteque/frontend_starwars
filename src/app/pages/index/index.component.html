@@ -1,0 +1,2 @@
+<app-table *ngIf="!character" (clickRow)="handleSelect($event)"></app-table>
+<app-character [character]="character" *ngIf="character"></app-character>

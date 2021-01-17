@@ -1,0 +1,20 @@
+<div class="container" >
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let character of data; index as i" (click)="handleClick(character)" >
+        <th scope="row">{{ i + 1 }}</th>
+        <td>
+          {{ character.name }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
